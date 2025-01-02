@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFEBEE;  /* Baby pink background color */
+  margin: 0;
+  padding: 0;
+  background-image: 
+    url('https://www.transparenttextures.com/patterns/flower-power.png'),  /* Floral background pattern */
+    url('C:\Users\DELL\Desktop\pcos\my-app\public\pcos_img1.jpeg'),  /* First small image from the public folder */
+    url('C:\Users\DELL\Desktop\pcos\my-app\public\pcos_img2.jpeg');  /* Second small image from the public folder */
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-position: center, left top, right bottom;
+  background-size: 100px 100px, auto, auto; /* Make images smaller */
+  background-attachment: fixed; /* Keep the background images fixed */
+}
+
+/* Container for the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FF69B4;  /* Pink color for the heading */
+  margin-bottom: 40px;
+}
+
+/* Form container */
+.form {
+  background-color: #d0f4e6;  /* Light green background for the form */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  position: relative; /* Ensure this is on top of the background images */
+  z-index: 1;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #e1bee7;  /* Light purple color for input buttons */
+}
+
+.input-container input:focus,
+.input-container select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Feature input buttons (Light purple by default, turn pink on hover) */
+.input-container input:hover,
+.input-container select:hover {
+  background-color: #ff69b4;  /* Pink color on hover */
+}
+
+/* Submit button (Predict) */
+.submit-btn {
+  background-color: #ff69b4;  /* Pink color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #ff1493;  /* Darker pink for hover */
+}
+.result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #FF1493;
+  font-weight: bold;
+}
